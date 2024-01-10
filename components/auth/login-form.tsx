@@ -45,8 +45,7 @@ export const LoginForm = () => {
 		setSuccess("");
 		startTransition(() => {
 			login(values, searchParams.get("returnUrl") || undefined).then((data) => {
-				setError(data.error || "");
-				setSuccess(data.success || "");
+				setError((data && data.error) || "");
 			});
 		});
 	};

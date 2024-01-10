@@ -78,7 +78,6 @@ export const RegisterForm = () => {
 					searchParams.get("returnUrl") || undefined
 				).then((data) => {
 					if (data.error) {
-						console.log(data.error);
 						setStep(data.error.step);
 						setError(data.error);
 					}
