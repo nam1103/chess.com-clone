@@ -1,10 +1,10 @@
 import { create } from "zustand";
 
 export enum STEPS {
-	INITIAL = 1,
-	LEVEL = 2,
-	AUTH = 3,
-	USERNAME = 4,
+	INITIAL,
+	LEVEL,
+	AUTH,
+	USERNAME,
 }
 
 interface RegisterStepStore {
